@@ -11,10 +11,6 @@ function findNaughtyStep(original, modified) {
     naughtyStep = modifiedArr
       .filter((step) => !originalArr.includes(step))
       .join("");
-  } else if (!originalArr.length) {
-    if (modifiedArr.length) {
-      naughtStep = modified;
-    }
   } else {
     originalArr.forEach((step, idx) => {
       if (modified[idx] !== step) {
